@@ -1,0 +1,7 @@
+{
+  "DRONEX_URL": "https://xxxx.ngrok-free.app",
+  "DRONE_ID": "DRX-001",
+  "DRONE_TOKEN": "REPLACE_WITH_SECURE_TOKEN",
+  "MODE": "SIMULATION",
+  "TELEMETRY_INTERVAL": 5
+}
