@@ -37,6 +37,23 @@ Campos requeridos:
 python agent.py --config config.json
 ```
 
+## Streaming MJPEG (opcional)
+
+Exponer video como MJPEG en `http://0.0.0.0:8080/stream.mjpg` usando Flask + OpenCV.
+
+```bash
+pip install flask opencv-python
+python video_stream.py
+```
+
+Opciones útiles:
+
+- `--port`: puerto del servidor (o variable `MJPEG_PORT`)
+- `--camera`: índice de cámara (default 0)
+- `--fps`: tasa de captura/simulación
+
+Si la cámara no está disponible, el stream entra en modo `SIMULATION` con frames negros y texto "SIMULATION FEED".
+
 ## Pruebas contra ngrok
 
 1. Asegura que el backend DRONEX esté levantado y expuesto por ngrok.
